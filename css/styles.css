@@ -135,3 +135,77 @@
     background-color: #888;
   }
 }
+
+/*/////////////////////////////my styles/////////////////////////////////*/
+
+input:focus, select:focus, textarea:focus, a:focus, button:focus {
+  border-radius: 2px !important;
+  outline: 0 !important;
+  box-shadow: 0 0 2px 2px #0A0A0A !important;
+}
+
+a {
+  color: #0A5A8F;
+}
+
+.button.is-primary.is-alt {
+  background: linear-gradient(to bottom, #0014ff, #0072ff);
+}
+
+.hero.is-info {
+  background-color: #0A5A8F;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a {
+  color: #0A5A8F;
+}
+
+.tag:not(body).is-primary {
+  background-color: #005C4D;
+}
+
+.tag:not(body).is-link {
+  background-color: #1A4A99;
+}
+
+.tag:not(body).is-danger {
+  background-color: #A80022;
+}
+
+.tag:not(body).is-success {
+  background-color: #0E622A;
+}
+
+.help.is-success {
+  color: #0D5928;
+}
+
+.input.is-success, .textarea.is-success {
+  border-color: #0D5928;
+}
+
+.help.is-danger {
+  color: #9E0020;
+}
+
+.input.is-danger, .textarea.is-danger {
+  border-color: #9E0020;
+}
+
+.button.is-info, .button.is-link {
+  background-color: #0A5A8F;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #0A5A8F;
+}
+
+.hero-head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-head .navbar {
+  background-color: inherit;
+}
