@@ -148,6 +148,22 @@ a {
   color: #0A5A8F;
 }
 
+.visuallyHidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.visuallyHidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+
 .button.is-primary.is-alt {
   background: linear-gradient(to bottom, #0014ff, #0072ff);
 }
@@ -208,4 +224,16 @@ a {
 
 .hero-head .navbar {
   background-color: inherit;
+}
+
+.subtitle {
+  color: #1f1e1e;
+}
+
+.hero.is-info .subtitle {
+  color: #ffffff;
+}
+
+.has-text-grey-light {
+  color: #353535 !important;
 }
