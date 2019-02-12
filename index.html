@@ -1028,94 +1028,97 @@
           <div class="subtitle is-5">Don't hesitate, ask anything</div>
         </div>
 
-        <form class="column is-half is-offset-one-quarter box">
-          <div class="field">
-            <label class="label" for="name">Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Text input" id="name" name="name">
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label" for="userName">Username</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" aria-invalid="false" type="text" id="userName" name="userName">
-              <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-              <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-            </div>
-            <p class="help is-success">This username is available</p>
-          </div>
-
-          <div class="field">
-            <label class="label" for="email">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" aria-invalid="false" type="email" placeholder="Email input" value="hello@" id="email" name="email">
-              <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-              <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
-            </div>
-            <p class="help is-danger">This email is invalid</p>
-          </div>
-
-          <div class="field">
-            <label class="label" for="subject">Subject</label>
-            <div class="control">
-              <div class="select">
-                <select id="subject" aria-haspopup="true">
-                  <option>Select dropdown</option>
-                  <option>With options</option>
-                </select>
+        <form class="column is-half is-offset-one-quarter box" aria-labelledby="form">
+          <fieldset class="contactForm">
+            <legend id="form">Contact controls</legend>
+            <div class="field">
+              <label class="label" for="name">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input" id="name" name="name">
               </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label" for="message">Message</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
+            <div class="field">
+              <label class="label" for="userName">Username</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-success" aria-invalid="false" type="text" id="userName" name="userName">
+                <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+                <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+              </div>
+              <p class="help is-success">This username is available</p>
             </div>
-          </div>
 
-          <div class="field">
-            <div class="control">
-              <label class="checkbox">
-                <input type="checkbox">
-                I agree to the <a>terms and conditions</a>
-              </label>
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" aria-invalid="false" type="email" placeholder="Email input" value="hello@" id="email" name="email">
+                <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+                <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle"></i>
+            </span>
+              </div>
+              <p class="help is-danger">This email is invalid</p>
             </div>
-          </div>
 
-          <fieldset class="field">
-            <legend>Are you sure?</legend>
-            <div class="control">
-              <label class="radio" for="questionYes">
-                <input type="radio" name="question" id="questionYes">
-                Yes
-              </label>
+            <div class="field">
+              <label class="label" for="subject">Subject</label>
+              <div class="control">
+                <div class="select">
+                  <select id="subject" aria-haspopup="true">
+                    <option>Select dropdown</option>
+                    <option>With options</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div>
-              <label class="radio" for="questionNo">
-                <input type="radio" name="question" id="questionNo">
-                No
-              </label>
+
+            <div class="field">
+              <label class="label" for="message">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  I agree to the <a>terms and conditions</a>
+                </label>
+              </div>
+            </div>
+
+            <fieldset class="field">
+              <legend>Are you sure?</legend>
+              <div class="control">
+                <label class="radio" for="questionYes">
+                  <input type="radio" name="question" id="questionYes">
+                  Yes
+                </label>
+              </div>
+              <div>
+                <label class="radio" for="questionNo">
+                  <input type="radio" name="question" id="questionNo">
+                  No
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-text">Cancel</button>
+              </div>
             </div>
           </fieldset>
-
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link">Submit</button>
-            </div>
-            <div class="control">
-              <button class="button is-text">Cancel</button>
-            </div>
-          </div>
         </form>
       </div>
     </section>
