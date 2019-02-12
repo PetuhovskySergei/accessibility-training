@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
-  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10  /css/all.css'>
+  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
   <link rel="stylesheet prefetch" href="css/styles.css">
 </head>
 
@@ -28,32 +28,32 @@
         <nav id="navbarMenu" class="navbar-menu">
           <ul class="navbar-end">
             <li class="navbar-item">
-              <a class="button is-white is-outlined">
-                    <span class="icon">
+              <a class="button is-white is-outlined" href="#">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-home"></i>
                     </span>
                 <span>Home</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a class="button is-white is-outlined">
-                    <span class="icon">
+              <a class="button is-white is-outlined" href="#">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-superpowers"></i>
                     </span>
                 <span>Examples</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a class="button is-white is-outlined">
-                    <span class="icon">
+              <a class="button is-white is-outlined" href="#">
+                    <span class="icon" aria-hidden="true">
                       <i class="fa fa-book"></i>
                     </span>
                 <span>Documentation</span>
               </a>
             </li>
             <li class="navbar-item">
-              <a class="button is-white is-outlined">
-                    <span class="icon">
+              <a class="button is-white is-outlined" href="#">
+                    <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>
                     </span>
                 <span>View Source</span>
@@ -320,25 +320,25 @@
           <ul role="tablist">
             <li data-target="pane-1" id="1" role="tab">
               <a>
-                <span class="icon is-small"><i class="fa fa-image"></i></span>
+                <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
                 <span>Pictures</span>
               </a>
             </li>
             <li data-target="pane-2" id="2" class="is-active" role="tab">
               <a>
-                <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                <span class="icon is-small" aria-hidden="true"><i class="fab fa-empire"></i></span>
                 <span>Article</span>
               </a>
             </li>
             <li data-target="pane-3" id="3" role="tab">
               <a>
-                <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
                 <span>Team</span>
               </a>
             </li>
             <li data-target="pane-4" id="4" role="tab">
               <a>
-                <span class="icon is-small"><i class="fa fa-film"></i></span>
+                <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
                 <span>Video</span>
               </a>
             </li>
@@ -350,53 +350,53 @@
           <div class="container">
             <div class="columns features">
               <div class="column is-4">
-                <div class="card">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="https://source.unsplash.com/random/?sig=1" alt="First random picture" class="modal-button" data-target="modal-image1">
                     </div>
                   </div>
-                  <div class="card-content">
+                  <figcaption class="card-content">
                     <div class="content">
                       <div>Click on image above</div>
                       <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                      <span class="button is-link modal-button" data-target="modal-image1">Image modal</span>
+                      <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               </div>
               <div class="column is-4">
-                <div class="card">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="https://source.unsplash.com/random/?sig=2" alt="Second random picture">
                     </div>
                   </div>
-                  <div class="card-content">
+                  <figcaption class="card-content">
                     <div class="content">
                       <div>Tempor orci dapibus ultrices in.</div>
                       <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                         sed risus.</p>
-                      <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                      <button class="button is-link modal-button" data-target="modal-card">Modal Card</button>
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               </div>
               <div class="column is-4 modal-button" data-target="modal-image">
-                <div class="card">
+                <figure class="card">
                   <div class="card-image">
                     <div class="image is-4by3">
                       <img src="https://source.unsplash.com/random/?sig=3" alt="Third random picture" class="modal-button" data-target="modal-image2">
                     </div>
                   </div>
-                  <div class="card-content">
+                  <figcaption class="card-content">
                     <div class="content">
                       <div>Click anywhere on card</div>
                       <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                      <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+                      <button class="button is-link modal-button" data-target="modal-image2">Image modal</button>
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
@@ -585,7 +585,7 @@
               </div>
               <h3 class="title">New York</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -595,7 +595,7 @@
               </div>
               <h3 class="title">Los Angeles</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -605,7 +605,7 @@
               </div>
               <h3 class="title">Mexico</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -618,7 +618,7 @@
               </div>
               <h3 class="title">Paris</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -628,7 +628,7 @@
               </div>
               <h3 class="title">Tokio</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
           <div class="tile is-parent">
@@ -638,7 +638,7 @@
               </div>
               <h3 class="title">London</h3>
               <p class="subtitle">Fri 27 Nov 2016</p>
-              <a class="button">Buy Tickets</a>
+              <button class="button">Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -885,7 +885,7 @@
           <div class="column is-9">
             <div class="box content">
               <div class="post">
-                <h4>How do you center a button in a box?</h4>
+                <h3>How do you center a button in a box?</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -901,13 +901,13 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 1</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How can I make a button go full width?</h4>
+                <h3>How can I make a button go full width?</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -923,13 +923,13 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 0</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>TypeError: Data must be a string or a buffer when trying touse tabs</h4>
+                <h3>TypeError: Data must be a string or a buffer when trying touse tabs</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -945,13 +945,13 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 13</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How to vertically center elements?</h4>
+                <h3>How to vertically center elements?</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -967,13 +967,13 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 2</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h4>
+                <h3>I'm trying to use hamburger menu on css, but it doesn't work. What is wrong?</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -989,13 +989,13 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 2</span>
                   </div>
                 </div>
               </div>
 
               <div class="post">
-                <h4>How to make tiles wrap with CSS?</h4>
+                <h3>How to make tiles wrap with CSS?</h3>
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-32x32">
@@ -1011,7 +1011,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light"><i class="fa fa-comments" aria-label="number of comments"></i> 2</span>
                   </div>
                 </div>
               </div>
@@ -1039,7 +1039,7 @@
           <div class="field">
             <label class="label" for="userName">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" id="userName" name="userName">
+              <input class="input is-success" aria-invalid="false" type="text" id="userName" name="userName">
               <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -1053,7 +1053,7 @@
           <div class="field">
             <label class="label" for="email">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email" name="email">
+              <input class="input is-danger" aria-invalid="false" type="email" placeholder="Email input" value="hello@" id="email" name="email">
               <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -1068,7 +1068,7 @@
             <label class="label" for="subject">Subject</label>
             <div class="control">
               <div class="select">
-                <select id="subject">
+                <select id="subject" aria-haspopup="true">
                   <option>Select dropdown</option>
                   <option>With options</option>
                 </select>
@@ -1120,19 +1120,20 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="facts">
       <div class="container">
+        <h2 class="visuallyHidden" id="facts">Facts</h2>
         <div class="columns is-multiline">
           <div class="column is-one-third">
             <div class="notification media has-background-white">
               <div class="media-left">
               <span class="icon">
-                <i class="has-text-warning fas fa-columns fa-lg"></i>
+                <i class="has-text-warning fas fa-columns fa-lg" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Columns</h4>
+                  <h3 class="title is-size-4">Columns</h3>
                   <p class="is-size-5 subtitle">
                     The power of <strong>Flexbox</strong> in a simple interface
                   </p>
@@ -1144,12 +1145,12 @@
             <div class="notification has-background-white media">
               <div class="media-left">
               <span class="icon has-text-info">
-                <i class="fab fa-lg fa-wpforms"></i>
+                <i class="fab fa-lg fa-wpforms" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Form</h4>
+                  <h3 class="title is-size-4">Form</h3>
                   <p class="is-size-5 subtitle">
                     The indispensable <strong>form controls</strong>, designed for maximum clarity
                   </p>
@@ -1161,12 +1162,12 @@
             <div class="notification has-background-white media">
               <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cubes"></i>
+                <i class="fas fa-lg fa-cubes" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Components</h4>
+                  <h3 class="title is-size-4">Components</h3>
                   <p class="is-size-5 subtitle">
                     Advanced multi-part components with lots of possibilities
                   </p>
@@ -1178,12 +1179,12 @@
             <div class="notification has-background-white media">
               <div class="media-left">
               <span class="icon has-text-grey">
-                <i class="fas fa-lg fa-cogs"></i>
+                <i class="fas fa-lg fa-cogs" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Modifiers</h4>
+                  <h3 class="title is-size-4">Modifiers</h3>
                   <p class="is-size-5 subtitle">
                     An <strong>easy-to-read</strong> naming system designed for humans
                   </p>
@@ -1195,12 +1196,12 @@
             <div class="notification has-background-white media">
               <div class="media-left">
               <span class="icon has-text-primary">
-                <i class="fas fa-lg fa-warehouse"></i>
+                <i class="fas fa-lg fa-warehouse" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Layout</h4>
+                  <h3 class="title is-size-4">Layout</h3>
                   <p class="is-size-5 subtitle">
                     Design the <strong>structure</strong> of your webpage with these CSS classes
                   </p>
@@ -1212,12 +1213,12 @@
             <div class="notification has-background-white media">
               <div class="media-left">
               <span class="icon has-text-danger">
-                <i class="fas fa-lg fa-cube"></i>
+                <i class="fas fa-lg fa-cube" aria-hidden="true"></i>
               </span>
               </div>
               <div class="media-content">
                 <div class="content">
-                  <h4 class="title is-size-4">Elements</h4>
+                  <h3 class="title is-size-4">Elements</h3>
                   <p class="is-size-5 subtitle">
                     Essential interface elements that only require a <strong>single CSS class</strong>
                   </p>
@@ -1272,17 +1273,17 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
-          <a><i class="fab fa-facebook fa-2x"></i></a>
-          <a><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" aria-label="github"><i class="fab fa-github-alt fa-2x" aria-hidden="true"></i></a>
+          <a href="#" aria-label="youtube"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="#" aria-label="twitter"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
         </div>
         <p>The source code is licensed <strong><a href="http://opensource.org/licenses/mit-license.php">MIT</a></strong>.</p>
       </div>
     </div>
   </footer>
 
-  <div id="modal-card" class="modal modal-fx-3dSlit">
+  <div id="modal-card" class="modal modal-fx-3dSlit" role="dialog" aria-modal="false">
     <div class="modal-background"></div>
     <div class="modal-content is-tiny">
       <div class="card">
@@ -1320,7 +1321,7 @@
     <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit">
+  <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog" aria-modal="false">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img src="https://source.unsplash.com/random/?sig=1" alt="Modal card">
@@ -1328,7 +1329,7 @@
     <button class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled">
+  <div id="modal-image2" class="modal modal-fx-superScaled" role="dialog" aria-modal="false">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
       <img src="https://source.unsplash.com/random/?sig=3" alt="Modal card">
