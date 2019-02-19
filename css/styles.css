@@ -172,7 +172,7 @@ a {
   background-color: #0A5A8F;
 }
 
-.hero.is-info .tabs.is-boxed li.is-active a {
+.hero.is-info .tabs.is-boxed li.is-active button {
   color: #0A5A8F;
 }
 
@@ -240,4 +240,27 @@ a {
 
 .contactForm {
   border: none;
+}
+
+.tabs button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: .5em 1em;
+  vertical-align: top;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  background-color: inherit;
+  font-size: 16px;
+}
+
+.tabs button:hover {
+  background-color: rgba(10,10,10,.1);
+}
+
+.hero.is-info .tabs.is-boxed li.is-active button {
+  background-color: #fff;
+  border-color: #fff;
 }
