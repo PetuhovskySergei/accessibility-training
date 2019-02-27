@@ -264,3 +264,19 @@ a {
   background-color: #fff;
   border-color: #fff;
 }
+
+.help {
+  display: none;
+}
+
+.help.help-show {
+  display: inline;
+}
+
+.errors {
+  display: none;
+}
+
+.errors.errorsVisible {
+  display: block;
+}

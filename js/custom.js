@@ -187,6 +187,31 @@
       };
     };
   };
+
+  let form = document.getElementById("contactForm"),
+      errorsList = document.getElementById("errorsList"),
+      submitButton = document.getElementById("contactUsSubmit"),
+      fields = form.getElementsByTagName("input");
+
+  submitButton.addEventListener("click", function () {
+    for (let i = 0; i < fields.length; i++) {
+      if (fields[i].value.length === 0) {
+        let ariaName = fields[i].parentNode.parentNode.lastElementChild.getAttribute("id")
+        fields[i].setAttribute("aria-invalid", "true");
+        fields[i].setAttribute("aria-describedby", ariaName);
+        fields[i].parentNode.parentNode.lastElementChild.classList.add("help-show");
+        document.querySelector(".errors").classList.add("errorsVisible");
+        document.querySelector(".errors").setAttribute("tabindex", "-1");
+        document.querySelector(".errors").focus();
+        let newLi = document.createElement('li');
+        newLi.innerText = fields[i].parentNode.parentNode.lastElementChild.textContent;
+        errorsList.appendChild(newLi)
+      }
+    }
+    
+
+  })
+
 })();
 
 document.querySelectorAll("#nav li").forEach(function(navEl) {
