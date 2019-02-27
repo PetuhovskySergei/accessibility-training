@@ -13,6 +13,7 @@
 <body>
 
   <header class="hero-head">
+    <a class="visuallyHidden" href="#contactUs">Go to Contact Form</a>
     <div class="navbar">
       <div class="container">
         <div class="navbar-brand">
@@ -58,6 +59,11 @@
                       <i class="fab fa-github"></i>
                     </span>
                 <span>View Source</span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a class="button is-white is-outlined" href="#contactUs">
+                <span>Contact Us</span>
               </a>
             </li>
           </ul>
@@ -1035,7 +1041,14 @@
             <div class="field">
               <label class="label" for="name">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input" id="name" name="name">
+                <input class="input" type="text" placeholder="Name input" id="name" name="name">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="secondName">Second name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Second name input" id="secondName" name="secondName">
               </div>
             </div>
 
@@ -1054,6 +1067,27 @@
             </div>
 
             <div class="field">
+              <label class="label" for="phone">Phone</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Phone number input" id="phone" name="phone">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="address">Address</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Address input" id="address" name="address">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="postcode">Postcode</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Postcode input" id="postcode" name="postcode">
+              </div>
+            </div>
+
+            <div class="field">
               <label class="label" for="email">Email</label>
               <div class="control has-icons-left has-icons-right">
                 <input class="input is-danger" aria-invalid="false" type="email" placeholder="Email input" value="hello@" id="email" name="email">
@@ -1066,50 +1100,6 @@
               </div>
               <p class="help is-danger">This email is invalid</p>
             </div>
-
-            <div class="field">
-              <label class="label" for="subject">Subject</label>
-              <div class="control">
-                <div class="select">
-                  <select id="subject" aria-haspopup="true">
-                    <option>Select dropdown</option>
-                    <option>With options</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label" for="message">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  I agree to the <a>terms and conditions</a>
-                </label>
-              </div>
-            </div>
-
-            <fieldset class="field">
-              <legend>Are you sure?</legend>
-              <div class="control">
-                <label class="radio" for="questionYes">
-                  <input type="radio" name="question" id="questionYes">
-                  Yes
-                </label>
-              </div>
-              <div>
-                <label class="radio" for="questionNo">
-                  <input type="radio" name="question" id="questionNo">
-                  No
-                </label>
-              </div>
-            </fieldset>
 
             <div class="field is-grouped">
               <div class="control">
