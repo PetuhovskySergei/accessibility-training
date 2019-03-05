@@ -193,7 +193,10 @@
       submitButton = document.getElementById("contactUsSubmit"),
       fields = form.getElementsByTagName("input");
 
-  submitButton.addEventListener("click", function () {
+
+
+  submitButton.addEventListener("click", function (e) {
+    e.preventDefault();
     for (let i = 0; i < fields.length; i++) {
       if (fields[i].value.length === 0) {
         let ariaName = fields[i].parentNode.parentNode.lastElementChild.getAttribute("id")
@@ -201,15 +204,13 @@
         fields[i].setAttribute("aria-describedby", ariaName);
         fields[i].parentNode.parentNode.lastElementChild.classList.add("help-show");
         document.querySelector(".errors").classList.add("errorsVisible");
-        document.querySelector(".errors").setAttribute("tabindex", "-1");
         document.querySelector(".errors").focus();
+        document.querySelector(".errors").setAttribute("tabindex", "-1");
         let newLi = document.createElement('li');
         newLi.innerText = fields[i].parentNode.parentNode.lastElementChild.textContent;
         errorsList.appendChild(newLi)
       }
     }
-    
-
   })
 
 })();
